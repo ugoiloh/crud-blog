@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load thumbnail %}
+
+
+{% block body%} 
+
+    <h3> <em> My first Django assignment on ZURI with some enhancement!</em></h3>
+    
+    {% for post in posts%}
+    
+        {{ post.text }} <br>
+        
+        <!-- <img src={{ post.image.url }}>  <hr> -->
+
+        {% thumbnail post.image "200x200" crop="center" as im %}
+            <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+        {% endthumbnail %}
+        <hr>
+    {% endfor %}
+
+
+{% endblock %}
