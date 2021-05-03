@@ -12,7 +12,12 @@
 </head>
 <body>
     <header>
-        <h1><a href="{% url 'blog:home' %}">Tech blog</a></h1>
+        <div class="nav-left">
+            <h1><a href="{% url 'blog:home' %}">Tech blog</a></h1>
+        </div>
+        <div class="nav-right">
+            <a href="{% url 'blog:new_post' %}">+ New Blog Post</a>
+        </div>
     </header>
     <div>
         {% block content %}
