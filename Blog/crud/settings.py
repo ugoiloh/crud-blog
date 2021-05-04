@@ -28,6 +28,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL = 'blog:home'
+LOGOUT_REDIRECT_URL = 'blog:home'
+
+
 
 # Application definition
 
@@ -41,6 +45,7 @@ INSTALLED_APPS = [
 
     #
     'blog',
+    'accounts',
 ]
 
 MIDDLEWARE = [
