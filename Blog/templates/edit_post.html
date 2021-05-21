@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{%block title %}Edit Post{% endblock %}
+{% block content %}
+    <h1 class="mt-2 text-info">Edit post</h1>
+    <form class="container-sm" action="" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-info" type="submit">Update</button>
+    </form>
+{% endblock content %}
