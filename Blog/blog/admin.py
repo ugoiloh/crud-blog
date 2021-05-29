@@ -4,6 +4,7 @@ from .models import Post, Comment
 class CommentInline(admin.TabularInline):   
     model = Comment
     extra = 0
+    
 class PostAdmin(admin.ModelAdmin):   
     inlines = [
     CommentInline,
