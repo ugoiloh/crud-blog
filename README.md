@@ -1,7 +1,7 @@
 # techblog
 A tech blog built with Django
 
-The blog app is live on [techcrat-blog.herokuapp.com](techcrat-blog.herokuapp.com)
+The blog app is live on [techcrat-blog.herokuapp.com](https://www.techcrat-blog.herokuapp.com)
 
 The Basic features are
 - Login
